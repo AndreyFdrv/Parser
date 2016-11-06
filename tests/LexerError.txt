@@ -1,0 +1,4 @@
+skip;
+write x!;
+while (2>1) do read y;
+if(y>5) then y:=y+1 else y:=1000;

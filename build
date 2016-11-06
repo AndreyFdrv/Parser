@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get install byacc flex
+sudo apt-get install gcc
+lex lexer.l
+gcc -c lex.yy.c
+gcc -c main.c -std=c99
+gcc -c normalization.c -std=c99
+gcc main.o lex.yy.o normalization.o -lfl -o Parser
